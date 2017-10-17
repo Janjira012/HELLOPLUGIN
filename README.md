@@ -1,0 +1,2 @@
+# HELLOPLUGIN
+use project mobile 
