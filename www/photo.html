@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/onsenui.css">
+        <link rel="stylesheet" href="css/onsen-css-components.min.css">
+        <script src="js/onsenui.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <title>Photo</title>
+    </head>
+    <body>
+        <ons-page id="helloworld-page">
+            <ons-toolbar>
+              <div class="center"></div>
+              <div class="right">
+                <ons-toolbar-button>
+                  <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+                </ons-toolbar-button>
+              </div>
+            </ons-toolbar>
+          
+            <p style="text-align: center">
+              <ons-button id="hello">Take a photo</ons-button>
+            </p>
+            <img src="" style="width:100%" id="preview">
+          </ons-page>
+          <div class="container">
+            <h2 style="margin-top:30px;">Photo Upload</h2>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Photo</label>
+                    <input id="photo" type="file" class="form-control" aria-describedby="emailHelp" placeholder="Select a photo">
+                </div>
+                 
+                <button type="button" id="upload" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="row" style="margin-top:30px;">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-block">
+                            <img width="90%" id="photo1">
+                            
+                            
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/photo.js"></script>
+    </body>
+</html>

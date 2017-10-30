@@ -1,22 +1,3 @@
-ons.ready(function() {
-    // deviceready event is fired
-    // Call whatever Cordova APIs
-
-    $("#hello").click(function(){        
-        navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-            destinationType: Camera.DestinationType.FILE_URI });
-        
-        function onSuccess(imageURI) {
-            var image = document.getElementById('preview');
-            image.src = imageURI;
-        }
-        
-        function onFail(message) {
-            alert('Failed because: ' + message);
-        }
-    });    
-});  
-
 $(function () {
     // if (!!$.cookie('keep')) {
     $.urlParam = function (name) {
@@ -56,9 +37,7 @@ $(function () {
             newuser.lastname = $("#lname").val();
             newuser.email = $("#email").val();
             newuser.tel = $("#tel").val();
-            
             newuser.url = $("#url").val();
-
             console.log(JSON.stringify(newuser));
             var updateUrl = "http://localhost:3000/data/" + data.id;
             $.ajax({
