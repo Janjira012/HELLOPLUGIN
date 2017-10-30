@@ -6,20 +6,6 @@
   "config_munge": {
     "files": {}
   },
-  "installed_plugins": {
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.example.helloplugin"
-    },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.example.helloplugin"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.example.helloplugin"
-    }
-  },
-  "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.example.helloplugin"
-    }
-  }
+  "installed_plugins": {},
+  "dependent_plugins": {}
 }
